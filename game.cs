@@ -14,9 +14,9 @@ namespace ChooseYourOwnAdventure
             Console.WriteLine("The game starts, which role are you?");
             Console.WriteLine("Enter 'crewmate' or 'impostor':");
 
-            string direction = Console.ReadLine();
+            string role = Console.ReadLine();
 
-            if (direction == "crewmate")
+            if (role == "crewmate")
             {
                 Console.WriteLine("You only have two tasks to do, which one do you choose?");
                 Console.WriteLine("Enter 'keycard' or 'fuel':");
@@ -36,7 +36,7 @@ namespace ChooseYourOwnAdventure
                     Console.WriteLine("Invalid choice, try again.");
                 }
             }
-            else if (direction == "impostor")
+            else if (role == "impostor")
             {
                 Console.WriteLine("You can choose someone to follow, who do you choose?");
                 Console.WriteLine("Enter 'yellow' or 'blue':");
